@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Business Performance — Mark Daniel M. Cusi</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="project-detail.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body class="project-detail-page">
+    <header class="project-detail-top">
+        <a href="../index.html" class="project-detail-back">
+            <span class="material-symbols-rounded">arrow_back</span>
+            Back to Portfolio
+        </a>
+    </header>
+
+    <main class="project-detail-container">
+        <div class="project-detail-grid">
+            <!-- Visuals Column -->
+            <div class="project-visuals">
+                <div class="project-preview-main">
+                    <img src="../assets/projects/Dashboard2.png" alt="Business Performance Dashboard">
+                </div>
+
+                <div class="detail-section">
+                    <h2>Technical Stack</h2>
+                    <div class="project-tools-wrap">
+                        <div class="tool-badge-modern">
+                            <span class="material-symbols-rounded" style="color: #21a366;">table_chart</span>
+                            Excel
+                        </div>
+                        <div class="tool-badge-modern">
+                            <span class="material-symbols-rounded" style="color: #3776ab;">terminal</span>
+                            Python
+                        </div>
+                        <div class="tool-badge-modern">
+                            <span class="material-symbols-rounded" style="color: #150458;">robot_2</span>
+                            VBA Automation
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detail-section">
+                    <h2>Project Focus</h2>
+                    <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6;">Automating monthly variance analysis and stakeholder reporting workflows to improve financial accuracy and reporting speed.</p>
+                </div>
+            </div>
+
+            <!-- Content Column -->
+            <div class="project-info">
+                <div class="project-header">
+                    <span class="project-tag">Financial Reporting</span>
+                    <h1 class="project-title">Monthly Business Performance</h1>
+                    <p class="project-summary">A structured report pack featuring Month-over-Month (MoM) variance
+                        analysis, trend commentary, and automated data processing for stakeholder communication.</p>
+                </div>
+
+                <div class="detail-section">
+                    <h2>Core Deliverables</h2>
+                    <div class="insight-grid">
+                        <div class="insight-card blue">
+                            <div class="insight-header">
+                                <span class="material-symbols-rounded insight-icon-box">insert_chart</span>
+                            </div>
+                            <div class="insight-info">
+                                <h4>Variance Analysis</h4>
+                                <p>Detailed breakdown of budget vs. actuals with automated commentary generation.</p>
+                            </div>
+                        </div>
+                        <div class="insight-card green">
+                            <div class="insight-header">
+                                <span class="material-symbols-rounded insight-icon-box">auto_fix_high</span>
+                            </div>
+                            <div class="insight-info">
+                                <h4>Workflow Automation</h4>
+                                <p>Python scripts for ETL processes, reducing manual data entry by 70%.</p>
+                            </div>
+                        </div>
+                        <div class="insight-card purple">
+                            <div class="insight-header">
+                                <span class="material-symbols-rounded insight-icon-box">analytics</span>
+                            </div>
+                            <div class="insight-info">
+                                <h4>Trend Commentary</h4>
+                                <p>Predictive modeling for next-month performance based on historical MoM trends.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detail-section">
+                    <h2>Impact & Outcomes</h2>
+                    <div class="outcome-container">
+                        <div class="outcome-card-modern" style="border-left: 4px solid #3b82f6;">
+                            <span class="material-symbols-rounded outcome-icon-modern" style="color: #3b82f6;">speed</span>
+                            <div class="outcome-info-modern">
+                                <h4>Reporting Efficiency</h4>
+                                <p>Reporting cycle reduced from 3 days to 4 hours through Python-based automation.</p>
+                            </div>
+                        </div>
+                        <div class="outcome-card-modern" style="border-left: 4px solid #10b981;">
+                            <span class="material-symbols-rounded outcome-icon-modern" style="color: #10b981;">visibility</span>
+                            <div class="outcome-info-modern">
+                                <h4>Stakeholder Clarity</h4>
+                                <p>Stakeholders received cleaner, more actionable insights with standardized visual reporting.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Mark Daniel Cusi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button class="theme-toggle theme-toggle-float" id="themeToggle" title="Toggle Theme">
+        <span class="material-symbols-rounded toggle-sun">light_mode</span>
+        <span class="material-symbols-rounded toggle-moon">dark_mode</span>
+    </button>
+
+    <script>
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+        });
+
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark-mode');
+        }
+    </script>
+</body>
+
+</html>

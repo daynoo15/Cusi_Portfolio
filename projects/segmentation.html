@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel - Project2</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="project-detail.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body class="project-detail-page">
+    <header class="project-detail-top">
+        <a href="../index.html" class="project-detail-back">
+            <span class="material-symbols-rounded">arrow_back</span>
+            Back to Portfolio
+        </a>
+    </header>
+
+    <main class="project-detail-container">
+        <!-- Dashboard at the Top -->
+        <div class="project-visuals" style="margin-bottom: 3rem; width: 100%;">
+            <div class="project-preview-main" style="border: none; box-shadow: none; background: transparent; margin-bottom: 0;">
+                <div class='tableauPlaceholder' id='viz1778813468790' style='position: relative; width: 100%;'>
+                    <noscript>
+                        <a href='#'>
+                            <img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Li&#47;ListofTopMovies-Year2000to2017&#47;Dashboard1&#47;1_rss.png' style='border: none' />
+                        </a>
+                    </noscript>
+                    <object class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='' />
+                        <param name='name' value='ListofTopMovies-Year2000to2017&#47;Dashboard1' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Li&#47;ListofTopMovies-Year2000to2017&#47;Dashboard1&#47;1.png' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='en-US' />
+                    </object>
+                </div>
+                <script type='text/javascript'>
+                    var divElement = document.getElementById('viz1778813468790');
+                    var vizElement = divElement.getElementsByTagName('object')[0];
+                    if (divElement.offsetWidth > 800) {
+                        vizElement.style.width = '100%';
+                        vizElement.style.height = '500px';
+                    } else if (divElement.offsetWidth > 500) {
+                        vizElement.style.width = '100%';
+                        vizElement.style.height = '500px';
+                    } else {
+                        vizElement.style.width = '100%';
+                        vizElement.style.height = '700px';
+                    }
+                    var scriptElement = document.createElement('script');
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                </script>
+            </div>
+        </div>
+
+        <!-- Content Grid Below -->
+        <div class="project-detail-grid">
+            <!-- Left Column: Header & Context -->
+            <div class="project-info">
+                <div class="project-header">
+                    <span class="project-tag">Market Analysis</span>
+                    <h1 class="project-title">Movie Industry Performance Analysis</h1>
+                    <p class="project-summary">A data-driven deep dive into top-performing movies from 2000 to 2017,
+                        focusing on ROI, popularity trends, and global language distribution.</p>
+                </div>
+
+                <div class="detail-section">
+                    <h2>Technical Stack</h2>
+                    <div class="project-tools-wrap">
+                        <div class="tool-badge-modern">
+                            <span class="material-symbols-rounded" style="color: #38bdf8;">database</span>
+                            SQL
+                        </div>
+                        <div class="tool-badge-modern">
+                            <span class="material-symbols-rounded" style="color: #e67e22;">bar_chart</span>
+                            Tableau
+                        </div>
+                        <div class="tool-badge-modern">
+                            <span class="material-symbols-rounded" style="color: #21a366;">table_chart</span>
+                            Excel
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detail-section">
+                    <h2>Live Dashboard</h2>
+                    <a href="https://public.tableau.com/app/profile/mark.daniel.cusi/viz/ListofTopMovies-Year2000to2017/Dashboard1"
+                        target="_blank" class="data-source-btn">
+                        <div style="display: flex; align-items: center; gap: 0.75rem;">
+                            <span class="material-symbols-rounded" style="color: #e67e22;">open_in_new</span>
+                            View on Tableau Public
+                        </div>
+                        <span class="material-symbols-rounded">chevron_right</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Column: Insights & Recommendations -->
+            <div class="project-insights-col">
+                <div class="detail-section">
+                    <h2>Key Insights</h2>
+                    <div class="insight-grid" style="grid-template-columns: 1fr; gap: 1rem;">
+                        <div class="insight-card blue">
+                            <div class="insight-header">
+                                <span class="material-symbols-rounded insight-icon-box">trending_up</span>
+                            </div>
+                            <div class="insight-info">
+                                <h4>Top Popularity</h4>
+                                <p>Minions led popularity, followed by Beauty and the Beast and Wonder Woman.</p>
+                            </div>
+                        </div>
+                        <div class="insight-card green">
+                            <div class="insight-header">
+                                <span class="material-symbols-rounded insight-icon-box">payments</span>
+                            </div>
+                            <div class="insight-info">
+                                <h4>Revenue Leaders</h4>
+                                <p>Avatar earned almost 2.8B, surpassing Star Wars and The Avengers.</p>
+                            </div>
+                        </div>
+                        <div class="insight-card purple">
+                            <div class="insight-header">
+                                <span class="material-symbols-rounded insight-icon-box">language</span>
+                            </div>
+                            <div class="insight-info">
+                                <h4>Language Trends</h4>
+                                <p>English dominated the market with significantly higher popularity scores.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detail-section">
+                    <h2>Business Recommendations</h2>
+                    <div class="recommendation-timeline">
+                        <div class="recommendation-item">
+                            <p><strong>Story Over Budget:</strong> Focus on strong storytelling and audience interest over raw production spending.</p>
+                        </div>
+                        <div class="recommendation-item">
+                            <p><strong>Strategic Investment:</strong> Prioritize proven genres or franchises with established fanbases.</p>
+                        </div>
+                        <div class="recommendation-item">
+                            <p><strong>Predictive Analysis:</strong> Utilize data to forecast success before committing to large budgets.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detail-section">
+                    <h2>Impact & Outcomes</h2>
+                    <div class="outcome-container">
+                        <div class="outcome-card-modern" style="border-left: 4px solid #3b82f6;">
+                            <span class="material-symbols-rounded outcome-icon-modern" style="color: #3b82f6;">groups</span>
+                            <div class="outcome-info-modern">
+                                <h4>Audience Engagement</h4>
+                                <p>Identified key attributes of high-popularity titles to boost overall audience engagement.</p>
+                            </div>
+                        </div>
+                        <div class="outcome-card-modern" style="border-left: 4px solid #10b981;">
+                            <span class="material-symbols-rounded outcome-icon-modern" style="color: #10b981;">branding_watermark</span>
+                            <div class="outcome-info-modern">
+                                <h4>Brand Strength</h4>
+                                <p>Correlated branding and franchise power with multi-billion dollar revenue outcomes.</p>
+                            </div>
+                        </div>
+                        <div class="outcome-card-modern" style="border-left: 4px solid #8b5cf6;">
+                            <span class="material-symbols-rounded outcome-icon-modern" style="color: #8b5cf6;">monitoring</span>
+                            <div class="outcome-info-modern">
+                                <h4>ROI Optimization</h4>
+                                <p>Revealed the decoupling of budget and revenue, shifting focus to high-efficiency projects.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Mark Daniel Cusi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button class="theme-toggle theme-toggle-float" id="themeToggle" title="Toggle Theme">
+        <span class="material-symbols-rounded toggle-sun">light_mode</span>
+        <span class="material-symbols-rounded toggle-moon">dark_mode</span>
+    </button>
+
+    <script>
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+        });
+
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark-mode');
+        }
+    </script>
+</body>
+
+</html>
