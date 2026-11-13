@@ -1,0 +1,356 @@
+/* ── Project Detail — Minimalist Dark Design ── */
+
+/* Inherits Inter + Space Grotesk from ../styles.css */
+
+body {
+    background: #1C1C1C;
+    color: #F4F5F0;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+}
+
+/* ── Top Bar ─────────────────────────────────── */
+.pd-top {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 1.1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #435146;
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border-bottom: 1px solid rgba(220,229,221,0.12);
+}
+
+.pd-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #DCE5DD;
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+.pd-back:hover { color: #F4F5F0; }
+
+.pd-back .material-symbols-rounded { font-size: 1.1rem; }
+
+.pd-logo {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #4A6958, #5C826D, #7EA990);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ── Page Wrapper ────────────────────────────── */
+.pd-wrap {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 4rem 2rem 6rem;
+}
+
+/* ── Hero Banner ─────────────────────────────── */
+.pd-hero {
+    margin-bottom: 4rem;
+}
+
+.pd-tag {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    background: linear-gradient(135deg, #4A6958, #7EA990);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.85rem;
+}
+
+.pd-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(1.75rem, 4vw, 2.75rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: #F4F5F0;
+    line-height: 1.15;
+    margin-bottom: 1rem;
+}
+
+.pd-summary {
+    font-size: 1rem;
+    color: #DCE5DD;
+    line-height: 1.75;
+    max-width: 640px;
+}
+
+/* ── Dashboard Image ─────────────────────────── */
+.pd-dashboard {
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(220,229,221,0.12);
+    margin-bottom: 4rem;
+    background: #1B2922;
+}
+
+.pd-dashboard img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Tableau embed wrapper */
+.pd-dashboard-embed {
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(220,229,221,0.12);
+    margin-bottom: 4rem;
+    background: #1B2922;
+    min-height: 500px;
+}
+
+/* ── Content Grid ────────────────────────────── */
+.pd-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.pd-grid-full {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+/* ── Section Block ───────────────────────────── */
+.pd-block {
+    background: #1B2922;
+    border: 1px solid rgba(220,229,221,0.12);
+    border-radius: 16px;
+    padding: 1.75rem;
+}
+
+.pd-block-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    background: linear-gradient(135deg, #4A6958, #7EA990);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.65rem;
+    display: block;
+}
+
+.pd-block h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #F4F5F0;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.25rem;
+}
+
+/* ── Tools ───────────────────────────────────── */
+.pd-tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.pd-tool {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #DCE5DD;
+    background: rgba(74,105,88,0.2);
+    border: 1px solid rgba(74,105,88,0.35);
+    border-radius: 9999px;
+    padding: 0.4rem 0.9rem;
+}
+
+.pd-tool .material-symbols-rounded { font-size: 0.95rem; }
+
+/* ── Link Button ─────────────────────────────── */
+.pd-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #DCE5DD;
+    background: rgba(74,105,88,0.15);
+    border: 1px solid rgba(74,105,88,0.3);
+    border-radius: 10px;
+    padding: 0.85rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+.pd-link:hover {
+    background: #4A6958;
+    border-color: #7EA990;
+    color: #F4F5F0;
+}
+
+.pd-link-left {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.pd-link .material-symbols-rounded { font-size: 1.1rem; }
+
+/* ── Insights List ───────────────────────────── */
+.pd-insights {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+}
+
+.pd-insight {
+    display: flex;
+    gap: 0.85rem;
+    align-items: flex-start;
+}
+
+.pd-insight-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    background: rgba(74,105,88,0.2);
+    border: 1px solid rgba(74,105,88,0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.pd-insight-icon .material-symbols-rounded {
+    font-size: 1rem;
+    background: linear-gradient(135deg, #4A6958, #7EA990);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.pd-insight-body h4 {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #F4F5F0;
+    margin-bottom: 0.2rem;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.pd-insight-body p {
+    font-size: 0.82rem;
+    color: #DCE5DD;
+    line-height: 1.55;
+}
+
+/* ── Recommendations ─────────────────────────── */
+.pd-recs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.pd-rec {
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-start;
+    font-size: 0.85rem;
+    color: #DCE5DD;
+    line-height: 1.6;
+}
+
+.pd-rec::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #4A6958, #7EA990);
+    flex-shrink: 0;
+    margin-top: 0.55rem;
+}
+
+.pd-rec strong { color: #F4F5F0; font-weight: 600; }
+
+/* ── Outcomes ────────────────────────────────── */
+.pd-outcomes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+}
+
+.pd-outcome {
+    display: flex;
+    gap: 0.85rem;
+    align-items: flex-start;
+    padding: 1rem;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(220,229,221,0.1);
+    border-radius: 10px;
+}
+
+.pd-outcome-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background: rgba(74,105,88,0.2);
+    border: 1px solid rgba(74,105,88,0.35);
+}
+
+.pd-outcome-icon .material-symbols-rounded {
+    font-size: 1.1rem;
+    background: linear-gradient(135deg, #4A6958, #7EA990);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.pd-outcome h4 {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #F4F5F0;
+    margin-bottom: 0.2rem;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.pd-outcome p {
+    font-size: 0.82rem;
+    color: #DCE5DD;
+    line-height: 1.55;
+}
+
+/* ── Footer ──────────────────────────────────── */
+.pd-footer {
+    text-align: center;
+    padding: 2.5rem 2rem;
+    border-top: 1px solid rgba(220,229,221,0.12);
+    font-size: 0.8rem;
+    color: #DCE5DD;
+}
+
+/* ── Responsive ──────────────────────────────── */
+@media (max-width: 768px) {
+    .pd-grid { grid-template-columns: 1fr; }
+    .pd-wrap { padding: 3rem 1.25rem 5rem; }
+}

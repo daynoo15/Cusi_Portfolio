@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mark Daniel M. Cusi | Data Analyst & UI Designer</title>
+    <title>Mark Daniel M. Cusi | Data Analyst &amp; UI Designer</title>
     <meta name="description"
         content="Portfolio of Mark Daniel M. Cusi, an aspiring Data Analyst and UI Designer specializing in turning data into actionable insights.">
     <link rel="stylesheet" href="styles.css">
@@ -13,403 +13,1434 @@
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="header-container">
-            <div class="header-left">
-                <img class="header-profile-pic" src="assets\profilepic.png" alt="Mark Daniel M. Cusi">
-            </div>
 
-            <nav class="navigation">
-                <button class="nav-btn active" data-page="home">
-                    <span class="material-symbols-rounded">home</span>Home
-                </button>
-                <button class="nav-btn" data-page="profile">
-                    <span class="material-symbols-rounded">person</span>Profile
-                </button>
-                <button class="nav-btn" data-page="projects">
-                    <span class="material-symbols-rounded">monitoring</span>Projects
-                </button>
-                <button class="nav-btn" data-page="certificates">
-                    <span class="material-symbols-rounded">workspace_premium</span>Certificates
-                </button>
-                <button class="nav-btn" data-page="connect">
-                    <span class="material-symbols-rounded">chat</span>Connect
-                </button>
-            </nav>
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
 
-            <div class="header-right">
-                <div class="time-info">
-                    <div class="time" id="currentTime">00:00:00 AM</div>
-                    <div class="date" id="currentDate">LOADING...</div>
-                </div>
-                <button class="hamburger" id="hamburger" aria-label="Menu">
-                    <span class="material-symbols-rounded">menu</span>
-                </button>
-            </div>
-        </div>
-
-        <!-- Mobile Navigation -->
-        <div class="mobile-nav" id="mobileNav">
-            <button class="nav-btn active" data-page="home"><span
-                    class="material-symbols-rounded">home</span>Home</button>
-            <button class="nav-btn" data-page="profile"><span
-                    class="material-symbols-rounded">person</span>Profile</button>
-            <button class="nav-btn" data-page="projects"><span
-                    class="material-symbols-rounded">monitoring</span>Projects</button>
-            <button class="nav-btn" data-page="certificates"><span
-                    class="material-symbols-rounded">workspace_premium</span>Certificates</button>
-            <button class="nav-btn" data-page="connect"><span
-                    class="material-symbols-rounded">chat</span>Connect</button>
-        </div>
-    </header>
-
-    <main class="container">
-        <!-- Hero Section -->
-        <div class="page active" id="page-home">
-            <section class="hero-section">
-                <div class="hero-image-wrapper">
-                    <img src="assets\profilepic.png" alt="Mark Daniel M. Cusi" class="hero-image">
-                </div>
-                <div class="hero-content">
-                    <h1>Mark Daniel M. Cusi</h1>
-                    <p class="hero-tagline">Aspiring Data Analyst and UI Designer</p>
-                    <p class="hero-intro">
-                        I specialize in building clarity from complex data sets—developing dashboards, metrics, and
-                        interfaces that transform raw information into actionable business insights.
-                    </p>
-                    <div class="hero-actions">
-                        <a href="#projects" class="btn btn-primary" onclick="switchPage('projects')">View Projects</a>
-                        <a href="assets\CUSI-CV.pdf" class="btn btn-secondary" target="_blank">View Resume</a>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <!-- Profile Section -->
-        <div class="page" id="page-profile">
-            <h2 class="page-title">Professional Profile</h2>
-            <p class="page-intro">Bridging the gap between raw data and meaningful user experiences.</p>
-
-            <div class="profile-grid">
-                <div class="profile-info">
-                    <div class="info-card">
-                        <h3>About Me</h3>
-                        <p style="margin-bottom: 1.5rem;">
-                            As an IT graduate with a focus on Business Analytics, I am passionate about data
-                            storytelling. I combine technical proficiency in SQL and Python with a keen eye for design
-                            to create reports that are not only accurate but also intuitive and visually compelling.
-                        </p>
-                        <h4 style="margin-bottom: 1rem;">Core Competencies</h4>
-                        <ul class="competency-list">
-                            <li>• Vibe Coding</li>
-                            <li>• Data Cleaning</li>
-                            <li>• SQL Optimization</li>
-                            <li>• Data Analysis</li>
-                            <li>• Dashboard Design</li>
-                            <li>• UI/UX Principles</li>
-                            <li>• Business Reporting</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="profile-skills">
-                    <h3>Technical Toolset</h3>
-                    <div class="skills-container">
-                        <div class="skill-item">
-                            <span class="material-symbols-rounded skill-icon">database</span>
-                            <span class="skill-name">MySQL</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="material-symbols-rounded skill-icon">database</span>
-                            <span class="skill-name">PostgreSQL</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="material-symbols-rounded skill-icon">terminal</span>
-                            <span class="skill-name">Python</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="material-symbols-rounded skill-icon">bar_chart</span>
-                            <span class="skill-name">Power BI</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="material-symbols-rounded skill-icon">bar_chart</span>
-                            <span class="skill-name">Tableau</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="material-symbols-rounded skill-icon">table_chart</span>
-                            <span class="skill-name">Excel</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="material-symbols-rounded skill-icon">brush</span>
-                            <span class="skill-name">Figma</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="material-symbols-rounded skill-icon">code</span>
-                            <span class="skill-name">HTML/CSS</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Projects Section -->
-        <div class="page" id="page-projects">
-            <h2 class="page-title">Analytics Portfolio</h2>
-            <p class="page-intro">Selected case studies demonstrating technical depth and business impact.</p>
-
-            <div class="projects-grid">
-                <a href="projects/kpi.html" class="project-card">
-                    <div class="project-image-box">
-                        <img src="assets/dashboard1/COFFEE SALES-page-001.jpg" alt="Coffee Sales Dashboard">
-                    </div>
-                    <div class="project-content">
-                        <span class="project-type">Business Intelligence</span>
-                        <h3 class="project-title">Executive KPI Analysis — Coffee Sales</h3>
-                        <p class="project-description">A performance-focused dashboard summarizing customer behavior and
-                            revenue trends for executive decision-making.</p>
-                        <div class="project-footer">
-                            <div class="project-tools">
-                                <span class="tool-badge">Excel</span>
-                                <span class="tool-badge">Power BI</span>
-                            </div>
-                            <span class="btn btn-secondary"
-                                style="padding: 0.5rem 1rem; font-size: 0.875rem;">Details</span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="projects/segmentation.html" class="project-card">
-                    <div class="project-image-box">
-                        <img src="assets\projects\Dashboard2.png" alt="Market Segmentation">
-                    </div>
-                    <div class="project-content">
-                        <span class="project-type">Market Analysis</span>
-                        <h3 class="project-title">Movie Industry Performance</h3>
-                        <p class="project-description">Data-driven analysis of top-performing movies focusing on ROI,
-                            popularity, and language trends from 2000–2017.</p>
-                        <div class="project-footer">
-                            <div class="project-tools">
-                                <span class="tool-badge">SQL</span>
-                                <span class="tool-badge">Tableau</span>
-                            </div>
-                            <span class="btn btn-secondary"
-                                style="padding: 0.5rem 1rem; font-size: 0.875rem;">Details</span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="projects/video-game-sales.html" class="project-card">
-                    <div class="project-image-box">
-                        <img src="assets/projects/video_game_sales_dashboard.png" alt="Video Game Sales Analysis">
-                    </div>
-                    <div class="project-content">
-                        <span class="project-type">Data Visualization</span>
-                        <h3 class="project-title">Global Video Game Sales (2024)</h3>
-                        <p class="project-description">Comprehensive analysis of 64,000+ titles tracking industry
-                            evolution and sales trends from 1971 to 2024.</p>
-                        <div class="project-footer">
-                            <div class="project-tools">
-                                <span class="tool-badge">Power BI</span>
-                                <span class="tool-badge">Excel</span>
-                            </div>
-                            <span class="btn btn-secondary"
-                                style="padding: 0.5rem 1rem; font-size: 0.875rem;">Details</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-
-        <!-- Certificates Section -->
-        <div class="page" id="page-certificates">
-            <h2 class="page-title">Professional Credentials</h2>
-            <p class="page-intro">Industry-recognized certifications and technical training.</p>
-
-            <div class="certificates-grid">
-                <div class="cert-card"
-                    onclick="openCertModal('assets/certificates/CER1.png', 'CISCO - Computer Hardware Basics')">
-                    <img src="assets/certificates/CER1.png" alt="CISCO Hardware" class="cert-image">
-                    <h3 class="cert-title">Computer Hardware Basics</h3>
-                    <p class="cert-org">CISCO Networking Academy</p>
-                </div>
-                <div class="cert-card"
-                    onclick="openCertModal('assets/DATA ESSENTIAL.jpg', 'CISCO - Data Science Essentials with Python')">
-                    <img src="assets/DATA ESSENTIAL.jpg" alt="Data Science" class="cert-image">
-                    <h3 class="cert-title">Data Science Essentials</h3>
-                    <p class="cert-org">CISCO Networking Academy</p>
-                </div>
-                <div class="cert-card"
-                    onclick="openCertModal('assets/Data-Analytics-Essentials-page-001.jpg', 'CISCO - Data Analytics Essentials')">
-                    <img src="assets/Data-Analytics-Essentials-page-001.jpg" alt="Data Analytics" class="cert-image">
-                    <h3 class="cert-title">Data Analytics Essentials</h3>
-                    <p class="cert-org">CISCO Networking Academy</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Connect Section -->
-        <div class="page" id="page-connect">
-            <h2 class="page-title">Connect With Me</h2>
-            <p class="page-intro">Let's collaborate on your next data-driven project.</p>
-
-            <div class="connect-container">
-                <div class="social-links">
-                    <a href="mailto:cusidaniel965@gmail.com?subject=Inquiry%20from%20Portfolio" class="social-item">
-                        <span class="material-symbols-rounded social-icon">mail</span>
-                        <span>Email</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/mark-daniel-cusi-5553a5292/" class="social-item">
-                        <span class="material-symbols-rounded social-icon">link</span>
-                        <span>LinkedIn</span>
-                    </a>
-                    <a href="https://github.com/daynoo15" class="social-item">
-                        <span class="material-symbols-rounded social-icon">terminal</span>
-                        <span>GitHub</span>
-                    </a>
-                </div>
-
-                <div class="contact-form-minimal">
-                    <h3 style="margin-bottom: 1rem;">Interested in working together?</h3>
-                    <p style="color: var(--text-muted); margin-bottom: 2rem;">I'm currently open to new opportunities
-                        and collaborations.</p>
-                    <a href="https://www.facebook.com/danielcusi15" class="btn btn-primary">Send a Message</a>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <footer class="footer">
-        <div class="footer-container">
-            <p>&copy; 2026 Mark Daniel Cusi. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Theme Toggle -->
-    <button class="theme-toggle" id="themeToggle" title="Toggle Theme">
-        <span class="material-symbols-rounded toggle-sun">light_mode</span>
-        <span class="material-symbols-rounded toggle-moon">dark_mode</span>
-    </button>
-
-    <!-- Certificate Modal -->
-    <div class="cert-modal" id="certModal">
-        <div class="cert-modal-backdrop" onclick="closeCertModal()"></div>
-        <div class="cert-modal-content">
-            <button class="cert-modal-close" onclick="closeCertModal()">&times;</button>
-            <img class="cert-modal-image" id="certModalImage" src="" alt="">
-            <h3 id="certModalTitle" style="margin-top: 1rem; text-align: center;"></h3>
-        </div>
+    <!-- Mobile top bar (shows on small screens) -->
+    <div class="mobile-topbar" id="mobileTopbar">
+        <span class="nav-logo">MDC.</span>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span class="material-symbols-rounded">menu</span>
+        </button>
     </div>
 
-    <script>
-        // Time & Date
-        function updateTime() {
-            const now = new Date();
-            const timeStr = now.toLocaleTimeString('en-US', { hour12: true, hour: '2-digit', minute: '2-digit', second: '2-digit' });
-            const dateStr = now.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' }).toUpperCase();
+    <!-- Left Sidebar Nav -->
+    <nav class="nav" id="mainNav">
+        <span class="nav-logo">MDC.</span>
 
-            document.getElementById('currentTime').textContent = timeStr;
-            document.getElementById('currentDate').textContent = dateStr;
-        }
-        setInterval(updateTime, 1000);
-        updateTime();
+        <span class="nav-section-label">Menu</span>
+        <div class="nav-links">
+            <a href="#home" class="nav-link active" id="nav-home">
+                <span class="material-symbols-rounded nav-icon">home</span>
+                Home
+            </a>
+            <a href="#about" class="nav-link" id="nav-about">
+                <span class="material-symbols-rounded nav-icon">person</span>
+                About
+            </a>
+            <div class="nav-link-group" id="nav-projects-group">
+                <a href="#projects" class="nav-link" id="nav-projects">
+                    <span class="material-symbols-rounded nav-icon">folder_open</span>
+                    Projects
+                    <span class="material-symbols-rounded nav-chevron">expand_more</span>
+                </a>
+                <div class="nav-sub-links" id="nav-projects-sub">
+                    <a href="#grid-data-analysis" class="nav-sub-link" id="nav-data-analysis">
+                        <span class="material-symbols-rounded">analytics</span>
+                        Data Analysis
+                    </a>
+                    <a href="#grid-web-design" class="nav-sub-link" id="nav-web-design">
+                        <span class="material-symbols-rounded">web</span>
+                        Web Design
+                    </a>
+                </div>
+            </div>
+            <a href="#certificates" class="nav-link" id="nav-certificates">
+                <span class="material-symbols-rounded nav-icon">workspace_premium</span>
+                Certificates
+            </a>
+            <a href="#connect" class="nav-link" id="nav-connect">
+                <span class="material-symbols-rounded nav-icon">mail</span>
+                Connect
+            </a>
+        </div>
 
-        // Page Navigation
-        const navBtns = document.querySelectorAll('.nav-btn');
-        const pages = document.querySelectorAll('.page');
-        const mobileNav = document.getElementById('mobileNav');
+        <div class="nav-footer">
+            <!-- Stats widget -->
+            <div class="nav-stats">
+                <div class="nav-stat-item">
+                    <span class="nav-stat-num" data-target="8">0</span>
+                    <span class="nav-stat-label">Projects</span>
+                </div>
+                <div class="nav-stat-divider"></div>
+                <div class="nav-stat-item">
+                    <span class="nav-stat-num" data-target="8">0</span>
+                    <span class="nav-stat-label">Tools</span>
+                </div>
+                <div class="nav-stat-divider"></div>
+                <div class="nav-stat-item">
+                    <span class="nav-stat-num" data-target="3">0</span>
+                    <span class="nav-stat-label">Certs</span>
+                </div>
+            </div>
+            <div class="nav-status">
+                <span class="nav-status-dot"></span>
+                Open to Work
+            </div>
+        </div>
+    </nav>
 
-        function switchPage(targetPage) {
-            navBtns.forEach(b => b.classList.remove('active'));
-            document.querySelectorAll(`.nav-btn[data-page="${targetPage}"]`).forEach(b => b.classList.add('active'));
+    <!-- Mobile nav dropdown -->
+    <div class="mobile-nav" id="mobileNav">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#grid-data-analysis" class="nav-link nav-mobile-sub">&#8627; Data Analysis</a>
+        <a href="#grid-web-design" class="nav-link nav-mobile-sub">&#8627; Web Design</a>
+        <a href="#certificates" class="nav-link">Certificates</a>
+        <a href="#connect" class="nav-link">Connect</a>
+    </div>
 
-            pages.forEach(p => {
-                p.classList.remove('active');
-                if (p.id === `page-${targetPage}`) p.classList.add('active');
+    <!-- ══════════════════ HERO ══════════════════ -->
+    <section class="hero section" id="home">
+        <div class="page">
+            <div class="hero-layout">
+
+                <!-- Left: Profile Image -->
+                <div class="hero-image-col">
+                    <div class="hero-img-wrap">
+                        <img src="assets/PROFILE1.png" alt="Mark Daniel M. Cusi" class="hero-img">
+                        <div class="hero-img-glow"></div>
+                    </div>
+                    <span class="hero-avail-badge">
+                        <span class="hero-dot"></span>
+                        Open to Work
+                    </span>
+                </div>
+
+                <!-- Right: Content -->
+                <div class="hero-content">
+
+                    <h1 class="hero-name">Mark Daniel<br><span>M. Cusi</span></h1>
+
+                    <p class="hero-role">
+                        I build <span class="typed" id="typingText"></span><span class="cursor">|</span>
+                    </p>
+
+                    <p class="hero-desc">
+                        I specialize in building clarity from complex data sets — developing dashboards,
+                        metrics, and interfaces that transform raw information into actionable insights.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <span class="material-symbols-rounded">arrow_forward</span>
+                            View Projects
+                        </a>
+                        <a href="assets/CUSI-CV.pdf" class="btn btn-ghost" target="_blank">
+                            <span class="material-symbols-rounded">download</span>
+                            Download CV
+                        </a>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════ TOOLS MARQUEE ══════════════════ -->
+    <div class="tools-marquee-section">
+        <p class="marquee-label">Tools &amp; Technologies</p>
+
+        <!-- Row 1: forward -->
+        <div class="marquee-track animate-forward" id="marqueeRow1">
+            <!-- set 1 -->
+            <span class="tool-chip">
+                <img src="https://cdn.simpleicons.org/microsoftexcel/217346" alt="Excel"> Microsoft Excel
+            </span>
+            <span class="tool-chip">
+                <img src="https://cdn.simpleicons.org/powerbi/F2C811" alt="Power BI"> Power BI
+            </span>
+            <span class="tool-chip">
+                <img src="https://cdn.simpleicons.org/mysql/4479A1" alt="MySQL"> MySQL
+            </span>
+            <span class="tool-chip">
+                <img src="https://cdn.simpleicons.org/tableau/E97627" alt="Tableau"> Tableau
+            </span>
+            <span class="tool-chip">
+                <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python"> Python
+            </span>
+            <span class="tool-chip">
+                <img src="https://cdn.simpleicons.org/postgresql/4169E1" alt="PostgreSQL"> PostgreSQL
+            </span>
+            <span class="tool-chip">
+                <img src="https://cdn.simpleicons.org/figma/F24E1E" alt="Figma"> Figma
+            </span>
+            <span class="tool-chip">
+                <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5"> HTML / CSS
+            </span>
+            <!-- set 2 (duplicate for seamless loop) -->
+            <span class="tool-chip">
+                <img src="https://cdn.simpleicons.org/microsoftexcel/217346" alt="Excel"> Microsoft Excel
+            </span>
+            <span class="tool-chip">
+                <img src="https://cdn.simpleicons.org/powerbi/F2C811" alt="Power BI"> Power BI
+            </span>
+            <span class="tool-chip">
+                <img src="https://cdn.simpleicons.org/mysql/4479A1" alt="MySQL"> MySQL
+            </span>
+            <span class="tool-chip">
+                <img src="https://cdn.simpleicons.org/tableau/E97627" alt="Tableau"> Tableau
+            </span>
+            <span class="tool-chip">
+                <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python"> Python
+            </span>
+            <span class="tool-chip">
+                <img src="https://cdn.simpleicons.org/postgresql/4169E1" alt="PostgreSQL"> PostgreSQL
+            </span>
+            <span class="tool-chip">
+                <img src="https://cdn.simpleicons.org/figma/F24E1E" alt="Figma"> Figma
+            </span>
+            <span class="tool-chip">
+                <img src="https://cdn.simpleicons.org/canva/00C4CC" alt="Canva"> Canva
+            </span>
+            <span class="tool-chip">
+                <img src="https://cdn.simpleicons.org/vscode/007ACC" alt="VS Code"> VS Code
+            </span>
+            <span class="tool-chip">
+                <img src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub"> GitHub
+            </span>
+            <span class="tool-chip">
+                <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5"> HTML / CSS
+            </span>
+        </div>
+
+        <!-- Row 2: reverse -->
+
+
+
+
+        <!-- ══════════════════ ABOUT ══════════════════ -->
+        <section class="section" id="about">
+            <div class="page">
+                <div class="about-grid">
+
+                    <!-- Left: About info + competencies -->
+                    <div class="about-left reveal">
+                        <span class="section-label">About Me</span>
+                        <h2 class="section-title anim-title">Bridging data &amp;<br>design.</h2>
+                        <p class="section-sub">
+                            As an IT graduate focused on Business Analytics, I combine technical proficiency
+                            in SQL and Python with a keen eye for design to create reports that are accurate,
+                            intuitive, and visually compelling.
+                        </p>
+
+                        <div class="competencies">
+                            <div class="comp-tag">
+                                <span class="material-symbols-rounded">code</span>Vibe Coding
+                            </div>
+                            <div class="comp-tag">
+                                <span class="material-symbols-rounded">cleaning_services</span>Data Cleaning
+                            </div>
+                            <div class="comp-tag">
+                                <span class="material-symbols-rounded">storage</span>SQL Optimization
+                            </div>
+                            <div class="comp-tag">
+                                <span class="material-symbols-rounded">analytics</span>Data Analysis
+                            </div>
+                            <div class="comp-tag">
+                                <span class="material-symbols-rounded">dashboard</span>Dashboard Design
+                            </div>
+                            <div class="comp-tag">
+                                <span class="material-symbols-rounded">design_services</span>UI/UX Principles
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Tools & Technologies -->
+                    <div class="about-right reveal">
+                        <span class="section-label">Tools &amp; Technologies</span>
+                        <h3 class="about-skills-title">What I Work With</h3>
+                        <div class="about-tools-grid">
+                            <div class="about-tool-chip">
+                                <img src="https://cdn.simpleicons.org/microsoftexcel/217346" alt="Excel">
+                                <span>Excel</span>
+                            </div>
+                            <div class="about-tool-chip">
+                                <img src="https://cdn.simpleicons.org/powerbi/F2C811" alt="Power BI">
+                                <span>Power BI</span>
+                            </div>
+                            <div class="about-tool-chip">
+                                <img src="https://cdn.simpleicons.org/mysql/4479A1" alt="MySQL">
+                                <span>MySQL</span>
+                            </div>
+                            <div class="about-tool-chip">
+                                <img src="https://cdn.simpleicons.org/tableau/E97627" alt="Tableau">
+                                <span>Tableau</span>
+                            </div>
+                            <div class="about-tool-chip">
+                                <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python">
+                                <span>Python</span>
+                            </div>
+                            <div class="about-tool-chip">
+                                <img src="https://cdn.simpleicons.org/postgresql/4169E1" alt="PostgreSQL">
+                                <span>PostgreSQL</span>
+                            </div>
+                            <div class="about-tool-chip">
+                                <img src="https://cdn.simpleicons.org/figma/F24E1E" alt="Figma">
+                                <span>Figma</span>
+                            </div>
+                            <div class="about-tool-chip">
+                                <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5">
+                                <span>HTML / CSS</span>
+                            </div>
+                            <div class="about-tool-chip">
+                                <img src="https://cdn.simpleicons.org/canva/00C4CC" alt="Canva">
+                                <span>Canva</span>
+                            </div>
+                            <div class="about-tool-chip">
+                                <img src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub">
+                                <span>GitHub</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════════ PROJECTS ══════════════════ -->
+        <section class="section" id="projects">
+            <div class="page">
+                <span class="section-label">Portfolio</span>
+                <h2 class="section-title anim-title">Selected Projects</h2>
+                <p class="section-sub">Case studies demonstrating technical depth and business impact.</p>
+
+                <!-- ── Subsection: Data Analysis ── -->
+                <div class="proj-subsection">
+                    <div class="proj-sub-header">
+                        <span class="proj-sub-icon material-symbols-rounded">analytics</span>
+                        <div>
+                            <h3 class="proj-sub-title">Data Analysis</h3>
+                            <p class="proj-sub-desc">Dashboards, reports, and data-driven insights.</p>
+                        </div>
+                    </div>
+                    <div class="proj-grid-wrapper">
+                        <button class="proj-grid-nav prev" onclick="scrollGrid(this, -1, event)" aria-label="Previous project">
+                            <span class="material-symbols-rounded">chevron_left</span>
+                        </button>
+                        <div class="projects-grid" id="grid-data-analysis">
+
+                            <!-- Project 1: Hospital Emergency Dashboard -->
+                            <div class="proj-card reveal" onclick="openProjModal('proj1')" style="cursor:pointer;">
+                                <div class="proj-thumb">
+                                    <div class="proj-carousel" id="carousel-proj1">
+                                        <img src="assets/Project1 - Data Analysis/Screenshot 2026-09-22 113835.png"
+                                            alt="Hospital Emergency Dashboard 1" class="proj-carousel-img active">
+                                        <img src="assets/Project1 - Data Analysis/Screenshot 2026-09-22 114155.png"
+                                            alt="Hospital Emergency Dashboard 2" class="proj-carousel-img">
+                                        <img src="assets/Project1 - Data Analysis/Screenshot 2026-09-22 114215.png"
+                                            alt="Hospital Emergency Dashboard 3" class="proj-carousel-img">
+                                    </div>
+                                    <div class="proj-carousel-dots" id="dots-proj1">
+                                        <span class="proj-dot active"></span>
+                                        <span class="proj-dot"></span>
+                                        <span class="proj-dot"></span>
+                                    </div>
+                                    <span class="proj-badge">Data Analysis</span>
+                                    <div class="proj-thumb-overlay">
+                                        <span class="material-symbols-rounded">open_in_full</span>
+                                        <span class="proj-overlay-label">View Project</span>
+                                    </div>
+                                </div>
+                                <div class="proj-body">
+                                    <span class="proj-tag">Data Analysis &amp; Visualization</span>
+                                    <h3 class="proj-title">Hospital Emergency Dashboard</h3>
+                                    <p class="proj-desc">An interactive dashboard analyzing hospital emergency
+                                        department data, visualizing patient wait times, admission trends, and
+                                        departmental performance to support data-driven healthcare decisions.</p>
+                                    <div class="proj-footer">
+                                        <div class="proj-chips">
+                                            <span class="proj-chip">Excel</span>
+                                            <span class="proj-chip">Power BI</span>
+                                            <span class="proj-chip">Data Viz</span>
+                                        </div>
+                                        <div class="proj-cta">
+                                            <span>Details</span>
+                                            <span class="proj-arrow material-symbols-rounded">arrow_forward</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project 6: Coffee Sales Dashboard -->
+                            <div class="proj-card reveal" onclick="openProjModal('proj6')" style="cursor:pointer;">
+                                <div class="proj-thumb">
+                                    <div class="proj-carousel" id="carousel-proj6">
+                                        <img src="assets/Project 6 - Data Analysis/screenshot1.png"
+                                            alt="Coffee Sales Dashboard" class="proj-carousel-img active"
+                                            style="object-position: top center;">
+                                    </div>
+                                    <div class="proj-carousel-dots" id="dots-proj6">
+                                        <span class="proj-dot active"></span>
+                                    </div>
+                                    <span class="proj-badge">Data Analysis</span>
+                                    <div class="proj-thumb-overlay">
+                                        <span class="material-symbols-rounded">open_in_full</span>
+                                        <span class="proj-overlay-label">View Project</span>
+                                    </div>
+                                </div>
+                                <div class="proj-body">
+                                    <span class="proj-tag">Sales &amp; Business Intelligence</span>
+                                    <h3 class="proj-title">Coffee Sales Dashboard</h3>
+                                    <p class="proj-desc">An interactive sales analytics dashboard tracking retail coffee
+                                        performance — visualizing total revenue, customer trends, hourly sales patterns,
+                                        payment methods, and product popularity.</p>
+                                    <div class="proj-footer">
+                                        <div class="proj-chips">
+                                            <span class="proj-chip">Power BI</span>
+                                            <span class="proj-chip">Excel</span>
+                                            <span class="proj-chip">Data Viz</span>
+                                        </div>
+                                        <div class="proj-cta">
+                                            <span>Details</span>
+                                            <span class="proj-arrow material-symbols-rounded">arrow_forward</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project 7: Global Gasoline Price Overview (2024) -->
+                            <div class="proj-card reveal" onclick="openProjModal('proj7')" style="cursor:pointer;">
+                                <div class="proj-thumb">
+                                    <div class="proj-carousel" id="carousel-proj7">
+                                        <img src="assets/Project 7 - Data Analysis/Screenshot 2026-11-06 212557.png"
+                                            alt="2024 Gasoline Price Overview Dashboard"
+                                            class="proj-carousel-img active" style="object-position: top center;">
+                                    </div>
+                                    <div class="proj-carousel-dots" id="dots-proj7">
+                                        <span class="proj-dot active"></span>
+                                    </div>
+                                    <span class="proj-badge">Data Analysis</span>
+                                    <div class="proj-thumb-overlay">
+                                        <span class="material-symbols-rounded">open_in_full</span>
+                                        <span class="proj-overlay-label">View Project</span>
+                                    </div>
+                                </div>
+                                <div class="proj-body">
+                                    <span class="proj-tag">Energy &amp; Market Intelligence</span>
+                                    <h3 class="proj-title">2024 Gasoline Price Overview</h3>
+                                    <p class="proj-desc">A global energy market dashboard monitoring retail fuel rates
+                                        across multiple countries — evaluating price variations across fuel types,
+                                        seasonal trends, and international benchmarks.</p>
+                                    <div class="proj-footer">
+                                        <div class="proj-chips">
+                                            <span class="proj-chip">Power BI</span>
+                                            <span class="proj-chip">Excel</span>
+                                            <span class="proj-chip">Data Viz</span>
+                                        </div>
+                                        <div class="proj-cta">
+                                            <span>Details</span>
+                                            <span class="proj-arrow material-symbols-rounded">arrow_forward</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project 8: Video Game Sales Dashboard -->
+                            <div class="proj-card reveal" onclick="openProjModal('proj8')" style="cursor:pointer;">
+                                <div class="proj-thumb">
+                                    <div class="proj-carousel" id="carousel-proj8">
+                                        <img src="assets/Project 8 - Data Analysis/Screenshot 2026-11-06 213303.png"
+                                            alt="Video Game Sales Dashboard - Overview" class="proj-carousel-img active"
+                                            style="object-position: top center;">
+                                        <img src="assets/Project 8 - Data Analysis/Screenshot 2026-11-06 213334.png"
+                                            alt="Video Game Sales Dashboard - Sales Performance"
+                                            class="proj-carousel-img" style="object-position: top center;">
+                                    </div>
+                                    <div class="proj-carousel-dots" id="dots-proj8">
+                                        <span class="proj-dot active"></span>
+                                        <span class="proj-dot"></span>
+                                    </div>
+                                    <span class="proj-badge">Data Analysis</span>
+                                    <div class="proj-thumb-overlay">
+                                        <span class="material-symbols-rounded">open_in_full</span>
+                                        <span class="proj-overlay-label">View Project</span>
+                                    </div>
+                                </div>
+                                <div class="proj-body">
+                                    <span class="proj-tag">Gaming &amp; Market Intelligence</span>
+                                    <h3 class="proj-title">Video Game Sales Dashboard</h3>
+                                    <p class="proj-desc">A multi-page gaming industry analytics dashboard analyzing
+                                        global video game sales across publishers, consoles, genres, critic scores, and
+                                        regional markets.</p>
+                                    <div class="proj-footer">
+                                        <div class="proj-chips">
+                                            <span class="proj-chip">Power BI</span>
+                                            <span class="proj-chip">Excel</span>
+                                            <span class="proj-chip">Data Viz</span>
+                                        </div>
+                                        <div class="proj-cta">
+                                            <span>Details</span>
+                                            <span class="proj-arrow material-symbols-rounded">arrow_forward</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <button class="proj-grid-nav next" onclick="scrollGrid(this, 1, event)" aria-label="Next project">
+                            <span class="material-symbols-rounded">chevron_right</span>
+                        </button>
+                        <div class="proj-scroll-track" onclick="trackClick(event, this)">
+                            <div class="proj-scroll-thumb"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── Subsection: Web Design ── -->
+                <div class="proj-subsection">
+                    <div class="proj-sub-header">
+                        <span class="proj-sub-icon material-symbols-rounded">web</span>
+                        <div>
+                            <h3 class="proj-sub-title">Web Design</h3>
+                            <p class="proj-sub-desc">Interfaces, portfolios, and visual web experiences.</p>
+                        </div>
+                    </div>
+                    <div class="proj-grid-wrapper">
+                        <button class="proj-grid-nav prev" onclick="scrollGrid(this, -1, event)" aria-label="Previous project">
+                            <span class="material-symbols-rounded">chevron_left</span>
+                        </button>
+                        <div class="projects-grid" id="grid-web-design">
+
+                            <!-- Project 2: Capstone Project - Sportswear Shop -->
+                            <div class="proj-card reveal" onclick="openProjModal('proj2')" style="cursor:pointer;">
+                                <div class="proj-thumb">
+                                    <div class="proj-carousel" id="carousel-proj2">
+                                        <img src="assets/Project2 - Web Design/screenshot1.png"
+                                            alt="Sportswear Shop Homepage" class="proj-carousel-img active">
+                                        <img src="assets/Project2 - Web Design/screenshot2.png"
+                                            alt="Sportswear Shop Products" class="proj-carousel-img">
+                                        <img src="assets/Project2 - Web Design/screenshot3.png"
+                                            alt="Sportswear Shop Features" class="proj-carousel-img">
+                                    </div>
+                                    <div class="proj-carousel-dots" id="dots-proj2">
+                                        <span class="proj-dot active"></span>
+                                        <span class="proj-dot"></span>
+                                        <span class="proj-dot"></span>
+                                    </div>
+                                    <span class="proj-badge">Web Design</span>
+                                    <div class="proj-thumb-overlay">
+                                        <span class="material-symbols-rounded">open_in_full</span>
+                                        <span class="proj-overlay-label">View Project</span>
+                                    </div>
+                                </div>
+                                <div class="proj-body">
+                                    <span class="proj-tag">Capstone &amp; E-Commerce</span>
+                                    <h3 class="proj-title">Capstone Project - Sportswear Shop</h3>
+                                    <p class="proj-desc">A full-featured e-commerce sportswear shop built as a capstone
+                                        project — featuring product browsing, custom jersey design uploads, and a modern
+                                        responsive UI trusted by teams and organizations.</p>
+                                    <div class="proj-footer">
+                                        <div class="proj-chips">
+                                            <span class="proj-chip">HTML / CSS</span>
+                                            <span class="proj-chip">JavaScript</span>
+                                            <span class="proj-chip">E-Commerce</span>
+                                        </div>
+                                        <div class="proj-cta">
+                                            <span>Details</span>
+                                            <span class="proj-arrow material-symbols-rounded">arrow_forward</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project 3: AICOM Marketing Services Website -->
+                            <div class="proj-card reveal" onclick="openProjModal('proj3')" style="cursor:pointer;">
+                                <div class="proj-thumb">
+                                    <div class="proj-carousel" id="carousel-proj3">
+                                        <img src="assets/Project3 - Web Design/screenshot1.png" alt="AICOM Homepage"
+                                            class="proj-carousel-img active">
+                                        <img src="assets/Project3 - Web Design/screenshot2.png"
+                                            alt="AICOM About Section" class="proj-carousel-img">
+                                        <img src="assets/Project3 - Web Design/screenshot3.png"
+                                            alt="AICOM Services Section" class="proj-carousel-img">
+                                    </div>
+                                    <div class="proj-carousel-dots" id="dots-proj3">
+                                        <span class="proj-dot active"></span>
+                                        <span class="proj-dot"></span>
+                                        <span class="proj-dot"></span>
+                                    </div>
+                                    <span class="proj-badge">Web Design</span>
+                                    <div class="proj-thumb-overlay">
+                                        <span class="material-symbols-rounded">open_in_full</span>
+                                        <span class="proj-overlay-label">View Project</span>
+                                    </div>
+                                </div>
+                                <div class="proj-body">
+                                    <span class="proj-tag">Business &amp; Marketing</span>
+                                    <h3 class="proj-title">AICOM Marketing Services Website</h3>
+                                    <p class="proj-desc">A modern, responsive marketing website for AICOM — an
+                                        authorized Converge distributor — featuring animated hero sections, coverflow
+                                        carousels, product showcases, and interactive contact forms.</p>
+                                    <div class="proj-footer">
+                                        <div class="proj-chips">
+                                            <span class="proj-chip">HTML / CSS</span>
+                                            <span class="proj-chip">JavaScript</span>
+                                            <span class="proj-chip">Responsive</span>
+                                        </div>
+                                        <div class="proj-cta">
+                                            <span>Details</span>
+                                            <span class="proj-arrow material-symbols-rounded">arrow_forward</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project 4: Yohanns Sportswear Mobile App UI/UX Design -->
+                            <div class="proj-card reveal" onclick="openProjModal('proj4')" style="cursor:pointer;">
+                                <div class="proj-thumb">
+                                    <div class="proj-carousel" id="carousel-proj4">
+                                        <img src="assets/Project4 - Web Design/screenshot1.png"
+                                            alt="Yohanns UI - Account & Favorites" class="proj-carousel-img active">
+                                        <img src="assets/Project4 - Web Design/screenshot2.png"
+                                            alt="Yohanns UI - Checkout Flow" class="proj-carousel-img">
+                                        <img src="assets/Project4 - Web Design/screenshot3.png"
+                                            alt="Yohanns UI - Order Tracking" class="proj-carousel-img">
+                                    </div>
+                                    <div class="proj-carousel-dots" id="dots-proj4">
+                                        <span class="proj-dot active"></span>
+                                        <span class="proj-dot"></span>
+                                        <span class="proj-dot"></span>
+                                    </div>
+                                    <span class="proj-badge">Mobile App Design</span>
+                                    <div class="proj-thumb-overlay">
+                                        <span class="material-symbols-rounded">open_in_full</span>
+                                        <span class="proj-overlay-label">View Project</span>
+                                    </div>
+                                </div>
+                                <div class="proj-body">
+                                    <span class="proj-tag">Mobile App &amp; Prototyping</span>
+                                    <h3 class="proj-title">Yohanns Sportswear — Mobile App Design</h3>
+                                    <p class="proj-desc">A comprehensive mobile application UI/UX design for the Yohanns
+                                        Sportswear e-commerce app — featuring account management, wishlist, cart,
+                                        checkout flow, and order tracking screens crafted in Figma.</p>
+                                    <div class="proj-footer">
+                                        <div class="proj-chips">
+                                            <span class="proj-chip">Figma</span>
+                                            <span class="proj-chip">Mobile UI/UX</span>
+                                            <span class="proj-chip">Prototyping</span>
+                                        </div>
+                                        <div class="proj-cta">
+                                            <span>Details</span>
+                                            <span class="proj-arrow material-symbols-rounded">arrow_forward</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project 5: VoteSmart - Voter Education Website -->
+                            <div class="proj-card reveal" onclick="openProjModal('proj5')" style="cursor:pointer;">
+                                <div class="proj-thumb">
+                                    <div class="proj-carousel" id="carousel-proj5">
+                                        <img src="assets/Project5 - Web Design/screenshot2.png" alt="VoteSmart Homepage"
+                                            class="proj-carousel-img active">
+                                        <img src="assets/Project5 - Web Design/screenshot1.png"
+                                            alt="VoteSmart Sign Up & Sign In" class="proj-carousel-img">
+                                        <img src="assets/Project5 - Web Design/screenshot3.png"
+                                            alt="VoteSmart Responsive Views" class="proj-carousel-img">
+                                    </div>
+                                    <div class="proj-carousel-dots" id="dots-proj5">
+                                        <span class="proj-dot active"></span>
+                                        <span class="proj-dot"></span>
+                                        <span class="proj-dot"></span>
+                                    </div>
+                                    <span class="proj-badge">Web Design</span>
+                                    <div class="proj-thumb-overlay">
+                                        <span class="material-symbols-rounded">open_in_full</span>
+                                        <span class="proj-overlay-label">View Project</span>
+                                    </div>
+                                </div>
+                                <div class="proj-body">
+                                    <span class="proj-tag">Civic Tech &amp; Education</span>
+                                    <h3 class="proj-title">VoteSmart — Voter Education Platform</h3>
+                                    <p class="proj-desc">A voter education website designed to empower citizens with
+                                        accurate, unbiased information — featuring candidate research tools, fact-check
+                                        resources, policy guides, and a fully responsive layout.</p>
+                                    <div class="proj-footer">
+                                        <div class="proj-chips">
+                                            <span class="proj-chip">HTML / CSS</span>
+                                            <span class="proj-chip">JavaScript</span>
+                                            <span class="proj-chip">Responsive</span>
+                                        </div>
+                                        <div class="proj-cta">
+                                            <span>Details</span>
+                                            <span class="proj-arrow material-symbols-rounded">arrow_forward</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <button class="proj-grid-nav next" onclick="scrollGrid(this, 1, event)" aria-label="Next project">
+                            <span class="material-symbols-rounded">chevron_right</span>
+                        </button>
+                        <div class="proj-scroll-track" onclick="trackClick(event, this)">
+                            <div class="proj-scroll-thumb"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════════ CERTIFICATES ══════════════════ -->
+        <section class="section" id="certificates">
+            <div class="page">
+                <span class="section-label">Credentials</span>
+                <h2 class="section-title anim-title">Certifications</h2>
+                <p class="section-sub">Industry-recognized certifications and technical training.</p>
+
+                <div class="certs-grid">
+                    <div class="cert-card reveal"
+                        onclick="openCertModal('assets/certificates/CER1.png', 'CISCO — Computer Hardware Basics')">
+                        <div class="cert-thumb">
+                            <img src="assets/certificates/CER1.png" alt="CISCO Hardware" class="cert-img">
+                            <div class="cert-overlay">
+                                <span class="material-symbols-rounded">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="cert-info">
+                            <h3 class="cert-name">Computer Hardware Basics</h3>
+                            <p class="cert-org-line">
+                                <span class="material-symbols-rounded">school</span>
+                                CISCO Networking Academy
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="cert-card reveal"
+                        onclick="openCertModal('assets/DATA ESSENTIAL.jpg', 'CISCO — Data Science Essentials with Python')">
+                        <div class="cert-thumb">
+                            <img src="assets/DATA ESSENTIAL.jpg" alt="Data Science" class="cert-img">
+                            <div class="cert-overlay">
+                                <span class="material-symbols-rounded">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="cert-info">
+                            <h3 class="cert-name">Data Science Essentials</h3>
+                            <p class="cert-org-line">
+                                <span class="material-symbols-rounded">school</span>
+                                CISCO Networking Academy
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="cert-card reveal"
+                        onclick="openCertModal('assets/Data-Analytics-Essentials-page-001.jpg', 'CISCO — Data Analytics Essentials')">
+                        <div class="cert-thumb">
+                            <img src="assets/Data-Analytics-Essentials-page-001.jpg" alt="Data Analytics"
+                                class="cert-img">
+                            <div class="cert-overlay">
+                                <span class="material-symbols-rounded">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="cert-info">
+                            <h3 class="cert-name">Data Analytics Essentials</h3>
+                            <p class="cert-org-line">
+                                <span class="material-symbols-rounded">school</span>
+                                CISCO Networking Academy
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════════ CONNECT ══════════════════ -->
+        <section class="section" id="connect">
+            <div class="page">
+                <div class="connect-inner">
+                    <span class="section-label">Let's Talk</span>
+                    <h2 class="section-title anim-title">Connect With Me</h2>
+                    <p class="section-sub">Let's collaborate on your next data-driven project.</p>
+
+                    <div class="socials">
+                        <a href="mailto:cusidaniel965@gmail.com?subject=Inquiry%20from%20Portfolio"
+                            class="social-btn reveal">
+                            <div class="social-icon-box">
+                                <span class="material-symbols-rounded">mail</span>
+                            </div>
+                            Email
+                        </a>
+                        <a href="https://www.linkedin.com/in/mark-daniel-cusi-5553a5292/" class="social-btn reveal"
+                            target="_blank">
+                            <div class="social-icon-box">
+                                <span class="material-symbols-rounded">link</span>
+                            </div>
+                            LinkedIn
+                        </a>
+                        <a href="https://github.com/daynoo15" class="social-btn reveal" target="_blank">
+                            <div class="social-icon-box">
+                                <span class="material-symbols-rounded">terminal</span>
+                            </div>
+                            GitHub
+                        </a>
+                    </div>
+
+                    <div class="contact-box reveal">
+                        <h3>Interested in working together?</h3>
+                        <p>I'm currently open to new opportunities and collaborations.</p>
+                        <a href="https://www.facebook.com/danielcusi15" class="btn btn-primary" target="_blank">
+                            <span class="material-symbols-rounded">send</span>
+                            Send a Message
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2026 Mark Daniel Cusi. All rights reserved.</p>
+            <p class="footer-sub">Built with passion &amp; precision.</p>
+        </footer>
+
+        <!-- Certificate Modal -->
+        <div class="cert-modal" id="certModal">
+            <div class="cert-modal-backdrop" onclick="closeCertModal()"></div>
+            <div class="cert-modal-content">
+                <button class="cert-modal-close" onclick="closeCertModal()">&times;</button>
+                <img class="cert-modal-image" id="certModalImage" src="" alt="">
+                <h3 id="certModalTitle" style="margin-top:1rem;text-align:center;font-size:1rem;color:var(--text);"></h3>
+            </div>
+        </div>
+
+        <!-- Project Full-Page Overlay -->
+        <div class="proj-page" id="projPage">
+
+            <!-- Sticky Header -->
+            <header class="proj-page-header">
+                <button class="proj-page-back" onclick="closeProjModal()">
+                    <span class="material-symbols-rounded">arrow_back</span>
+                    Back to Portfolio
+                </button>
+                <span class="proj-page-header-title" id="projPageHeaderTitle"></span>
+                <div style="width:160px;"></div>
+            </header>
+
+            <!-- Scrollable Body -->
+            <div class="proj-page-body">
+
+                <!-- Hero Gallery -->
+                <div class="proj-page-hero">
+                    <div class="proj-page-slides" id="projPageSlides"></div>
+                    <button class="proj-page-nav prev" onclick="modalNav(-1)">
+                        <span class="material-symbols-rounded">chevron_left</span>
+                    </button>
+                    <button class="proj-page-nav next" onclick="modalNav(1)">
+                        <span class="material-symbols-rounded">chevron_right</span>
+                    </button>
+                    <div class="proj-page-counter" id="projPageCounter">1 / 3</div>
+                </div>
+
+                <!-- Thumbnails -->
+                <div class="proj-page-thumbs" id="projPageThumbs"></div>
+
+                <!-- Detail Section -->
+                <div class="proj-page-detail">
+
+                    <!-- Left: Info -->
+                    <div class="proj-page-info">
+                        <span class="proj-page-tag" id="projPageTag"></span>
+                        <h1 class="proj-page-title" id="projPageTitle"></h1>
+                        <p class="proj-page-desc" id="projPageDesc"></p>
+
+                        <div class="proj-page-section-label">Overview</div>
+                        <p class="proj-page-overview" id="projPageOverview"></p>
+                    </div>
+
+                    <!-- Right: Sidebar -->
+                    <aside class="proj-page-sidebar">
+                        <div class="proj-page-meta-card">
+                            <div class="proj-page-meta-label">Technologies</div>
+                            <div class="proj-page-chips" id="projPageChips"></div>
+                        </div>
+                        <div class="proj-page-meta-card">
+                            <div class="proj-page-meta-label">Category</div>
+                            <p class="proj-page-meta-value" id="projPageCategory"></p>
+                        </div>
+                        <div class="proj-page-meta-card">
+                            <div class="proj-page-meta-label">Role</div>
+                            <p class="proj-page-meta-value" id="projPageRole"></p>
+                        </div>
+                        <div class="proj-page-meta-card">
+                            <div class="proj-page-meta-label">Year</div>
+                            <p class="proj-page-meta-value" id="projPageYear"></p>
+                        </div>
+                        <a class="btn btn-primary proj-page-link" id="projPageLink" href="" target="_blank"
+                            style="display:none; margin-top:0.5rem; text-align:center; text-decoration:none;">
+                            <span class="material-symbols-rounded">open_in_new</span>
+                            View Live Project
+                        </a>
+                    </aside>
+
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // ── Scroll Progress ──────────────────────────────────────────────────
+            window.addEventListener('scroll', () => {
+                const scrollTop = document.documentElement.scrollTop;
+                const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                document.getElementById('scrollProgress').style.width = (scrollTop / scrollHeight * 100) + '%';
             });
 
-            mobileNav.classList.remove('open');
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-
-        navBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                const targetPage = btn.getAttribute('data-page');
-                switchPage(targetPage);
+            // ── Hamburger ────────────────────────────────────────────────────────
+            const mobileNav = document.getElementById('mobileNav');
+            document.getElementById('hamburger').addEventListener('click', () => {
+                mobileNav.classList.toggle('open');
             });
-        });
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => mobileNav.classList.remove('open'));
+            });
 
-        // Hamburger
-        document.getElementById('hamburger').addEventListener('click', () => {
-            mobileNav.classList.toggle('open');
-        });
+            // ── Scrollspy (sidebar) ───────────────────────────────────────────────
+            const sections = document.querySelectorAll('.section');
 
-        // Theme Toggle
-        const themeToggle = document.getElementById('themeToggle');
-        themeToggle.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-            localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
-        });
+            const spy = new IntersectionObserver(entries => {
+                entries.forEach(e => {
+                    if (e.isIntersecting) {
+                        const id = e.target.id;
+                        document.querySelectorAll('.nav-link').forEach(l => {
+                            l.classList.toggle('active', l.getAttribute('href') === '#' + id);
+                        });
+                    }
+                });
+            }, { rootMargin: '-20% 0px -60% 0px' });
 
-        if (localStorage.getItem('theme') === 'dark') {
-            document.body.classList.add('dark-mode');
-        }
+            sections.forEach(s => spy.observe(s));
 
-        // Certificate Modal
-        const certModal = document.getElementById('certModal');
-        const certModalImg = document.getElementById('certModalImage');
-        const certModalTitle = document.getElementById('certModalTitle');
+            // ── Projects Sub-nav Toggle ───────────────────────────────────────────
+            const projGroup = document.getElementById('nav-projects-group');
+            const projNavLink = document.getElementById('nav-projects');
+            if (projGroup && projNavLink) {
+                // Open by default
+                projGroup.classList.add('open');
+                projNavLink.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    projGroup.classList.toggle('open');
+                });
+            }
 
-        function openCertModal(src, title) {
-            certModalImg.src = src;
-            certModalTitle.textContent = title;
-            certModal.classList.add('open');
-            document.body.style.overflow = 'hidden';
-        }
+            // ── Typing Effect ────────────────────────────────────────────────────
+            const phrases = ['data stories.', 'BI dashboards.', 'SQL insights.', 'clean visuals.', 'smart analytics.'];
+            let pi = 0, ci = 0, del = false;
+            const typedEl = document.getElementById('typingText');
 
-        function closeCertModal() {
-            certModal.classList.remove('open');
-            document.body.style.overflow = 'auto';
-        }
-
-        // Intersection Observer for animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                    observer.unobserve(entry.target);
+            function type() {
+                const cur = phrases[pi];
+                if (!del) {
+                    typedEl.textContent = cur.slice(0, ++ci);
+                    if (ci === cur.length) { del = true; return setTimeout(type, 1800); }
+                } else {
+                    typedEl.textContent = cur.slice(0, --ci);
+                    if (ci === 0) { del = false; pi = (pi + 1) % phrases.length; }
                 }
+                setTimeout(type, del ? 55 : 90);
+            }
+            setTimeout(type, 800);
+
+            // ── Counter Animation ────────────────────────────────────────────────
+            function animateCounter(el) {
+                const target = parseInt(el.dataset.target);
+                let cur = 0;
+                const step = Math.ceil(target / 30);
+                const iv = setInterval(() => {
+                    cur += step;
+                    if (cur >= target) { el.textContent = target + '+'; clearInterval(iv); }
+                    else el.textContent = cur;
+                }, 40);
+            }
+
+            new IntersectionObserver(entries => {
+                entries.forEach(e => {
+                    if (e.isIntersecting) { animateCounter(e.target); e.target._obs.unobserve(e.target); }
+                });
+            }, { threshold: 0.5 });
+
+            // patch: simple counter on load for hero stats + nav stats
+            document.querySelectorAll('.stat-num, .nav-stat-num').forEach(el => {
+                const obs = new IntersectionObserver(entries => {
+                    if (entries[0].isIntersecting) { animateCounter(el); obs.unobserve(el); }
+                }, { threshold: 0.5 });
+                obs.observe(el);
             });
-        }, observerOptions);
 
-        function initAnimations() {
-            const animatedElements = document.querySelectorAll('.skill-item, .project-card, .cert-card, .info-card');
-            animatedElements.forEach(el => {
-                el.style.opacity = '0';
-                el.style.transform = 'translateY(20px)';
-                el.style.transition = 'all 0.6s cubic-bezier(0.23, 1, 0.32, 1)';
-                observer.observe(el);
+            // ── Skill Bar Animation ──────────────────────────────────────────────
+            const skillObs = new IntersectionObserver(entries => {
+                entries.forEach(e => {
+                    if (e.isIntersecting) {
+                        e.target.style.width = e.target.dataset.pct + '%';
+                        skillObs.unobserve(e.target);
+                    }
+                });
+            }, { threshold: 0.3 });
+
+            document.querySelectorAll('.skill-fill').forEach(b => skillObs.observe(b));
+
+            // ── Scroll Reveal ────────────────────────────────────────────────────
+            const revealObs = new IntersectionObserver(entries => {
+                entries.forEach((e, i) => {
+                    if (e.isIntersecting) {
+                        setTimeout(() => e.target.classList.add('visible'), (i % 4) * 80);
+                        revealObs.unobserve(e.target);
+                    }
+                });
+            }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+
+            document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+            // ── Certificate Modal ────────────────────────────────────────────────
+            const certModal = document.getElementById('certModal');
+
+            function openCertModal(src, title) {
+                document.getElementById('certModalImage').src = src;
+                document.getElementById('certModalTitle').textContent = title;
+                certModal.classList.add('open');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeCertModal() {
+                certModal.classList.remove('open');
+                document.body.style.overflow = '';
+            }
+
+            window.openCertModal = openCertModal;
+            window.closeCertModal = closeCertModal;
+
+            // ── Section Title Animation ──────────────────────────────────────────
+            function splitTitle(el) {
+                // Preserve <br> tags by working node by node
+                const nodes = Array.from(el.childNodes);
+                el.innerHTML = '';
+                nodes.forEach(node => {
+                    if (node.nodeType === Node.TEXT_NODE) {
+                        node.textContent.split('').forEach(ch => {
+                            const s = document.createElement('span');
+                            s.className = 'title-char';
+                            s.textContent = ch === ' ' ? '\u00A0' : ch;
+                            el.appendChild(s);
+                        });
+                    } else {
+                        // e.g. <br>
+                        el.appendChild(node.cloneNode(true));
+                    }
+                });
+            }
+
+            document.querySelectorAll('.anim-title').forEach(title => {
+                splitTitle(title);
+                const chars = title.querySelectorAll('.title-char');
+                const titleObs = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            chars.forEach((ch, i) => {
+                                ch.style.animationDelay = (i * 28) + 'ms';
+                                ch.classList.add('title-char--animate');
+                            });
+                            titleObs.unobserve(title);
+                        }
+                    });
+                }, { threshold: 0.25 });
+                titleObs.observe(title);
             });
-        }
 
-        // Initialize animations on page load and page switch
-        document.addEventListener('DOMContentLoaded', initAnimations);
+            /* ── Project Image Carousels ─────────────────────────────── */
+            function initCarousel(carouselId, dotsId) {
+                const carousel = document.getElementById(carouselId);
+                const dotsContainer = document.getElementById(dotsId);
+                if (!carousel || !dotsContainer) return;
 
-        const originalSwitchPage = switchPage;
-        switchPage = function (targetPage) {
-            originalSwitchPage(targetPage);
-            setTimeout(initAnimations, 100);
-        };
-        window.switchPage = switchPage;
-        window.openCertModal = openCertModal;
-        window.closeCertModal = closeCertModal;
-    </script>
+                const imgs = Array.from(carousel.querySelectorAll('.proj-carousel-img'));
+                const dots = Array.from(dotsContainer.querySelectorAll('.proj-dot'));
+                if (imgs.length <= 1) {
+                    dotsContainer.style.display = 'none';
+                    return;
+                }
+
+                let current = 0;
+                let timer = null;
+
+                function goTo(index) {
+                    imgs[current].classList.remove('active');
+                    dots[current].classList.remove('active');
+                    current = (index + imgs.length) % imgs.length;
+                    imgs[current].classList.add('active');
+                    dots[current].classList.add('active');
+                }
+
+                function startAuto() {
+                    if (timer) clearInterval(timer);
+                    timer = setInterval(() => goTo(current + 1), 3000);
+                }
+
+                // Dot click — jump to slide, then resume auto after 5s
+                dots.forEach((dot, i) => dot.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    clearInterval(timer);
+                    goTo(i);
+                    setTimeout(startAuto, 5000);
+                }));
+
+                // Kick off auto-slide immediately
+                startAuto();
+            }
+
+            document.addEventListener('DOMContentLoaded', () => {
+                initCarousel('carousel-proj1', 'dots-proj1');
+                initCarousel('carousel-proj2', 'dots-proj2');
+                initCarousel('carousel-proj3', 'dots-proj3');
+                initCarousel('carousel-proj4', 'dots-proj4');
+                initCarousel('carousel-proj5', 'dots-proj5');
+                initCarousel('carousel-proj6', 'dots-proj6');
+                initCarousel('carousel-proj7', 'dots-proj7');
+                initCarousel('carousel-proj8', 'dots-proj8');
+
+                // Init arrow visibility for all grid wrappers
+                function initAllGridNav() {
+                    document.querySelectorAll('.proj-grid-wrapper').forEach(wrapper => {
+                        const grid = wrapper.querySelector('.projects-grid');
+                        if (grid) {
+                            updateGridArrows(wrapper, grid);
+                        }
+                    });
+                }
+
+                document.querySelectorAll('.proj-grid-wrapper').forEach(wrapper => {
+                    const grid = wrapper.querySelector('.projects-grid');
+                    if (grid) {
+                        updateGridArrows(wrapper, grid);
+                        grid.addEventListener('scroll', () => updateGridArrows(wrapper, grid), { passive: true });
+                    }
+                });
+
+                window.addEventListener('load', initAllGridNav);
+                window.addEventListener('resize', initAllGridNav);
+            });
+
+            /* ── Project Grid Scroll Arrows ───────────────────────────────── */
+            function scrollGrid(btn, direction, event) {
+                if (event) {
+                    event.stopPropagation();
+                    event.preventDefault();
+                }
+                const wrapper = btn.closest('.proj-grid-wrapper');
+                if (!wrapper) return;
+                const grid = wrapper.querySelector('.projects-grid');
+                if (!grid) return;
+                const card = grid.querySelector('.proj-card');
+                const gap = parseFloat(window.getComputedStyle(grid).gap) || 28;
+                const cardWidth = (card ? card.offsetWidth : 320) + gap;
+                grid.scrollBy({ left: direction * cardWidth, behavior: 'smooth' });
+
+                setTimeout(() => updateGridArrows(wrapper, grid), 350);
+                setTimeout(() => updateGridArrows(wrapper, grid), 650);
+            }
+
+            function updateGridArrows(wrapper, grid) {
+                const prevBtn = wrapper.querySelector('.proj-grid-nav.prev');
+                const nextBtn = wrapper.querySelector('.proj-grid-nav.next');
+                if (prevBtn && nextBtn) {
+                    const maxScroll = grid.scrollWidth - grid.clientWidth;
+                    const hasOverflow = maxScroll > 8;
+                    if (!hasOverflow) {
+                        prevBtn.classList.add('hidden');
+                        nextBtn.classList.add('hidden');
+                    } else {
+                        const atStart = grid.scrollLeft <= 8;
+                        const atEnd = grid.scrollLeft >= maxScroll - 8;
+                        prevBtn.classList.toggle('hidden', atStart);
+                        nextBtn.classList.toggle('hidden', atEnd);
+                    }
+                }
+
+                // Update scroll progress thumb
+                const track = wrapper.querySelector('.proj-scroll-track');
+                const thumb = wrapper.querySelector('.proj-scroll-thumb');
+                if (track && thumb) {
+                    const scrollableWidth = grid.scrollWidth - grid.clientWidth;
+                    if (scrollableWidth <= 0) {
+                        track.style.display = 'none';
+                        return;
+                    }
+                    track.style.display = '';
+                    const ratio = grid.clientWidth / grid.scrollWidth;
+                    const thumbWidth = Math.max(ratio * 100, 15); // min 15% width
+                    const scrollPercent = grid.scrollLeft / scrollableWidth;
+                    const thumbLeft = Math.min(Math.max(scrollPercent * (100 - thumbWidth), 0), 100 - thumbWidth);
+                    thumb.style.width = thumbWidth + '%';
+                    thumb.style.left = thumbLeft + '%';
+                }
+            }
+
+            function trackClick(event, track) {
+                const wrapper = track.closest('.proj-grid-wrapper');
+                const grid = wrapper.querySelector('.projects-grid');
+                if (!grid) return;
+                const rect = track.getBoundingClientRect();
+                const clickPercent = (event.clientX - rect.left) / rect.width;
+                const scrollableWidth = grid.scrollWidth - grid.clientWidth;
+                grid.scrollTo({ left: clickPercent * scrollableWidth, behavior: 'smooth' });
+            }
+
+            window.scrollGrid = scrollGrid;
+            window.trackClick = trackClick;
+
+            /* ── Project Full-Page Overlay ───────────────────────────────── */
+            const PROJECTS = {
+                proj1: {
+                    tag: 'Data Analysis & Visualization',
+                    title: 'Hospital Emergency Dashboard',
+                    desc: 'An interactive dashboard analyzing hospital emergency department data, visualizing patient wait times, admission trends, and departmental performance to support data-driven healthcare decisions.',
+                    overview: 'This project involved collecting and transforming raw emergency department records into a structured dataset, then building a comprehensive Power BI dashboard. Key visualizations include hourly patient volume heatmaps, average wait time by triage level, bed occupancy trends, and a department-level performance scorecard — giving hospital managers a single pane of glass for real-time operational insights.',
+                    chips: ['Excel', 'Power BI', 'Data Viz'],
+                    category: 'Data Analysis',
+                    role: 'Data Analyst',
+                    year: '2026',
+                    images: [
+                        'assets/Project1 - Data Analysis/Screenshot 2026-09-22 113835.png',
+                        'assets/Project1 - Data Analysis/Screenshot 2026-09-22 114155.png',
+                        'assets/Project1 - Data Analysis/Screenshot 2026-09-22 114215.png'
+                    ]
+                },
+                proj2: {
+                    tag: 'Capstone & E-Commerce',
+                    title: 'Capstone Project - Sportswear Shop',
+                    desc: 'A full-featured e-commerce sportswear shop built as a capstone project — featuring product browsing, custom jersey design uploads, and a modern responsive UI trusted by teams and organizations.',
+                    overview: 'Yohann\'s Sportswear House is an e-commerce platform designed and developed as a capstone project. The site offers a comprehensive shopping experience for quality sportswear, custom jerseys, uniforms, and accessories like tote bags, umbrellas, and towels. Key features include product catalog browsing, category filtering, a custom dream design upload tool, and a fully responsive layout. The design emphasizes a premium dark-themed aesthetic with vibrant accent colors, high-quality product imagery, and intuitive navigation — trusted by teams, clubs, and organizations worldwide.',
+                    chips: ['HTML / CSS', 'JavaScript', 'E-Commerce'],
+                    category: 'Web Design',
+                    role: 'Web Designer & Developer',
+                    year: '2026',
+                    link: 'https://yohannssportswear.com/',
+                    images: [
+                        'assets/Project2 - Web Design/screenshot1.png',
+                        'assets/Project2 - Web Design/screenshot2.png',
+                        'assets/Project2 - Web Design/screenshot3.png'
+                    ]
+                },
+                proj3: {
+                    tag: 'Business & Marketing',
+                    title: 'AICOM Marketing Services Website',
+                    desc: 'A modern, responsive marketing website for AICOM Marketing Services — an authorized distributor of Surf2Sawa Prepaid Internet by Converge — featuring animated hero sections, coverflow carousels, product showcases, and interactive contact forms.',
+                    overview: 'AICOM Marketing Services is a telecommunication marketing company established to provide reliable high-speed internet through fiber-optic technology. This website was designed and developed to showcase their products and services, company achievements, organizational structure, and contact information. Key features include an animated letter-by-letter hero title, a coverflow card carousel for the About section with filter pills, an interactive product slideshow, responsive mobile sidebar navigation, floating FAQ and video tutorial buttons, Google Maps integration, and smooth scroll-triggered animations throughout. The design follows a sleek dark-themed aesthetic with teal accent colors and modern glassmorphism elements.',
+                    chips: ['HTML / CSS', 'JavaScript', 'Responsive'],
+                    category: 'Web Design',
+                    role: 'Web Designer & Developer',
+                    year: '2026',
+                    link: 'https://aicom-web.github.io/aicom-website/index.html#home',
+                    images: [
+                        'assets/Project3 - Web Design/screenshot1.png',
+                        'assets/Project3 - Web Design/screenshot2.png',
+                        'assets/Project3 - Web Design/screenshot3.png'
+                    ]
+                },
+                proj4: {
+                    tag: 'Mobile App & Prototyping',
+                    title: 'Yohanns Sportswear — Mobile App Design',
+                    desc: 'A comprehensive mobile application UI/UX design for the Yohanns Sportswear e-commerce app — featuring account management, wishlist, cart, checkout flow, and order tracking screens crafted in Figma.',
+                    overview: 'This project showcases the complete mobile app UI/UX design process for the Yohanns Sportswear e-commerce platform, built in Figma as part of the capstone project. The design system includes mobile screens for user account management (edit profile, account dashboard), a wishlist/favorites feature, shopping cart with edit capabilities, a multi-step checkout flow, and order tracking with delivery status updates (to ship, to receive, delivered). The mobile-first design language follows a modern dark-themed aesthetic with vibrant accent colors and clean typography, ensuring a seamless and visually engaging mobile shopping experience across all user touchpoints.',
+                    chips: ['Figma', 'Mobile UI/UX', 'Prototyping'],
+                    category: 'Mobile App Design',
+                    role: 'UI/UX Designer',
+                    year: '2026',
+                    link: 'https://www.figma.com/design/yY3lkyycK6eBy8RfFpNPKE/CAPSTONE?node-id=0-1&t=LeNhEPs8DaeG0urM-1',
+                    images: [
+                        'assets/Project4 - Web Design/screenshot1.png',
+                        'assets/Project4 - Web Design/screenshot2.png',
+                        'assets/Project4 - Web Design/screenshot3.png'
+                    ]
+                },
+                proj5: {
+                    tag: 'Civic Tech & Education',
+                    title: 'VoteSmart — Voter Education Platform',
+                    desc: 'A voter education website designed to empower citizens with accurate, unbiased information — featuring candidate research tools, fact-check resources, policy guides, and a fully responsive layout.',
+                    overview: 'VoteSmart is a civic technology web platform dedicated to educating voters and promoting informed decision-making. The website features a hero section with the tagline "Empowering Voters for a Better Future," a clear mission and vision statement, and a "How to Vote Wisely" guide covering candidate research, policy understanding, fact-checking, and discussion engagement. The platform includes user authentication with sign-up and sign-in flows (including social login and verification codes), a newsletter subscription, and a fully responsive design that adapts seamlessly from desktop to mobile. The visual design uses a professional blue-and-yellow color scheme with clean card-based layouts and intuitive navigation.',
+                    chips: ['HTML / CSS', 'JavaScript', 'Responsive'],
+                    category: 'Web Design',
+                    role: 'Web Designer & Developer',
+                    year: '2026',
+                    link: 'https://www.figma.com/design/yY3lkyycK6eBy8RfFpNPKE/CAPSTONE?node-id=0-1&t=LeNhEPs8DaeG0urM-1',
+                    images: [
+                        'assets/Project5 - Web Design/screenshot2.png',
+                        'assets/Project5 - Web Design/screenshot1.png',
+                        'assets/Project5 - Web Design/screenshot3.png',
+                        'assets/Project5 - Web Design/screenshot4.png',
+                        'assets/Project5 - Web Design/screenshot5.png'
+                    ]
+                },
+                proj6: {
+                    tag: 'Sales & Business Intelligence',
+                    title: 'Coffee Sales Dashboard',
+                    desc: 'An interactive sales analytics dashboard tracking retail coffee performance — visualizing total revenue, customer trends, hourly sales patterns, payment methods, and product popularity.',
+                    overview: 'The Coffee Sales Dashboard provides key decision-makers with comprehensive retail intelligence to optimize store operations and maximize beverage sales. Built with structured data modeling and intuitive visualization principles, it tracks critical business metrics including total customer volume (3,636 customers), overall revenue ($115,431.6), and year-over-year sales performance (2024 vs. 2025). Key analytical views include sales per day velocity trends, time-of-day purchase distribution (Morning, Afternoon, Night), payment method distribution showing a high cashless rate (97.55% card transactions), and a product ranking showing Latte and Americano with Milk as primary revenue drivers.',
+                    chips: ['Power BI', 'Excel', 'Data Viz', 'Sales Analytics'],
+                    category: 'Data Analysis',
+                    role: 'Data Analyst',
+                    year: '2026',
+                    images: [
+                        'assets/Project 6 - Data Analysis/screenshot1.png'
+                    ]
+                },
+                proj7: {
+                    tag: 'Energy & Market Intelligence',
+                    title: '2024 Gasoline Price in Different Country Overview',
+                    desc: 'A global energy market dashboard monitoring retail fuel rates across multiple countries — evaluating price variations across fuel types, seasonal trends, and international benchmarks.',
+                    overview: 'The 2024 Gasoline Price Overview Dashboard delivers critical market intelligence into global fuel pricing patterns across international borders. Analyzed across 5,000 customer transaction points, the dashboard tracks core metrics including an average price of 92.35 per liter, a recorded peak of 140.00, and a baseline low of 44.80. The dashboard visualizes monthly minimum price trajectories throughout the year (highlighting an August surge), comparative pricing across fuel categories (Diesel, Regular, Premium), country-by-country maximums across 10 nations (Australia, Brazil, Canada, France, Germany, India, Japan, Philippines, UK, and USA), and an interactive global geographic map.',
+                    chips: ['Power BI', 'Excel', 'Data Viz', 'Market Analytics'],
+                    category: 'Data Analysis',
+                    role: 'Data Analyst',
+                    year: '2024',
+                    images: [
+                        'assets/Project 7 - Data Analysis/Screenshot 2026-11-06 212557.png'
+                    ]
+                },
+                proj8: {
+                    tag: 'Gaming & Market Intelligence',
+                    title: 'Video Game Sales Dashboard',
+                    desc: 'A multi-page gaming industry analytics dashboard analyzing global video game sales across publishers, consoles, genres, critic scores, and regional markets.',
+                    overview: 'The Video Game Sales Dashboard provides end-to-end commercial intelligence on video game industry trends across multiple console generations. Built with Power BI and structured tabular datasets, the dashboard covers 39,596 total game titles across 3,383 publishers, representing over 6,610 unit sales globally. The multi-page interface features an executive Home overview tracking top-selling titles (led by Grand Theft Auto V with 64M+ sales and Call of Duty franchises), critic scores across top genres (Action, RPG, Shooter), and regional sales distribution. The dedicated Sales view breaks down performance by console hardware (PlayStation 2, Xbox 360, PS3, PS4), regional market share (North America at 56.22%, Europe/Africa at 32.21%, and Japan at 11.56%), and multi-year historical growth trends.',
+                    chips: ['Power BI', 'Excel', 'Data Viz', 'Market Analytics'],
+                    category: 'Data Analysis',
+                    role: 'Data Analyst',
+                    year: '2026',
+                    images: [
+                        'assets/Project 8 - Data Analysis/Screenshot 2026-11-06 213303.png',
+                        'assets/Project 8 - Data Analysis/Screenshot 2026-11-06 213334.png'
+                    ]
+                }
+            };
+
+            let modalSlideIndex = 0;
+            let modalSlides = [];
+            let modalThumbs = [];
+
+            function openProjModal(id) {
+                const p = PROJECTS[id];
+                if (!p) return;
+
+                // Header + Info
+                document.getElementById('projPageHeaderTitle').textContent = p.title;
+                document.getElementById('projPageTag').textContent = p.tag;
+                document.getElementById('projPageTitle').textContent = p.title;
+                document.getElementById('projPageDesc').textContent = p.desc;
+                document.getElementById('projPageOverview').textContent = p.overview;
+                document.getElementById('projPageCategory').textContent = p.category;
+                document.getElementById('projPageRole').textContent = p.role;
+                document.getElementById('projPageYear').textContent = p.year;
+
+                // Chips
+                document.getElementById('projPageChips').innerHTML =
+                    p.chips.map(c => `<span class="proj-chip">${c}</span>`).join('');
+
+                // View Live Project link
+                const linkEl = document.getElementById('projPageLink');
+                if (p.link) {
+                    linkEl.href = p.link;
+                    linkEl.style.display = '';
+                } else {
+                    linkEl.style.display = 'none';
+                }
+
+                // Hero slides
+                const slidesEl = document.getElementById('projPageSlides');
+                slidesEl.innerHTML = p.images.map((src, i) =>
+                    `<div class="proj-page-slide${i === 0 ? ' active' : ''}">
+                        <img src="${src}" alt="${p.title} screenshot ${i + 1}">
+                    </div>`
+                ).join('');
+                modalSlides = Array.from(slidesEl.querySelectorAll('.proj-page-slide'));
+
+                // Thumbnail strip & nav controls
+                const thumbsEl = document.getElementById('projPageThumbs');
+                const prevNav = document.querySelector('.proj-page-nav.prev');
+                const nextNav = document.querySelector('.proj-page-nav.next');
+                const counter = document.getElementById('projPageCounter');
+
+                if (p.images.length > 1) {
+                    if (prevNav) prevNav.style.display = '';
+                    if (nextNav) nextNav.style.display = '';
+                    if (counter) counter.style.display = '';
+                    thumbsEl.style.display = '';
+                    thumbsEl.innerHTML = p.images.map((src, i) =>
+                        `<div class="proj-page-thumb${i === 0 ? ' active' : ''}" onclick="goToSlide(${i})">
+                            <img src="${src}" alt="Thumbnail ${i + 1}">
+                        </div>`
+                    ).join('');
+                    modalThumbs = Array.from(thumbsEl.querySelectorAll('.proj-page-thumb'));
+                } else {
+                    if (prevNav) prevNav.style.display = 'none';
+                    if (nextNav) nextNav.style.display = 'none';
+                    if (counter) counter.style.display = 'none';
+                    thumbsEl.style.display = 'none';
+                    thumbsEl.innerHTML = '';
+                    modalThumbs = [];
+                }
+
+                modalSlideIndex = 0;
+                updateCounter();
+
+                // Scroll body back to top
+                document.querySelector('.proj-page-body').scrollTop = 0;
+
+                // Open — slide up
+                document.getElementById('projPage').classList.add('open');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeProjModal() {
+                document.getElementById('projPage').classList.remove('open');
+                document.body.style.overflow = '';
+            }
+
+            function goToSlide(index) {
+                if (!modalSlides.length) return;
+                modalSlides[modalSlideIndex].classList.remove('active');
+                if (modalThumbs[modalSlideIndex]) modalThumbs[modalSlideIndex].classList.remove('active');
+                modalSlideIndex = (index + modalSlides.length) % modalSlides.length;
+                modalSlides[modalSlideIndex].classList.add('active');
+                if (modalThumbs[modalSlideIndex]) modalThumbs[modalSlideIndex].classList.add('active');
+                updateCounter();
+            }
+
+            function modalNav(dir) {
+                goToSlide(modalSlideIndex + dir);
+            }
+
+            function updateCounter() {
+                document.getElementById('projPageCounter').textContent =
+                    `${modalSlideIndex + 1} / ${modalSlides.length}`;
+            }
+
+            // Keyboard: Escape closes, arrows navigate
+            document.addEventListener('keydown', (e) => {
+                const page = document.getElementById('projPage');
+                if (!page.classList.contains('open')) return;
+                if (e.key === 'Escape') closeProjModal();
+                if (e.key === 'ArrowRight') modalNav(1);
+                if (e.key === 'ArrowLeft') modalNav(-1);
+            });
+
+            window.openProjModal = openProjModal;
+            window.closeProjModal = closeProjModal;
+            window.modalNav = modalNav;
+            window.goToSlide = goToSlide;
+        </script>
 </body>
 
 </html>
